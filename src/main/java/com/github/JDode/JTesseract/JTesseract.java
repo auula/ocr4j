@@ -14,39 +14,49 @@ public class JTesseract {
     private static File config;
 
     // JTesseract LOGO
-    private  final String LOGOSTR = "\033[35m" + "\n" +
+    private final String LOGOSTR = "\033[35m" + "\n" +
             "     ____.___________                                              __   \n" +
             "    |    |\\__    ___/___   ______ ______ ________________    _____/  |_ \n" +
             "    |    |  |    |_/ __ \\ /  ___//  ___// __ \\_  __ \\__  \\ _/ ___\\   __\\\n" +
             "/\\__|    |  |    |\\  ___/ \\___ \\ \\___ \\\\  ___/|  | \\// __ \\\\  \\___|  |  \n" +
             "\\________|  |____| \\___  >____  >____  >\\___  >__|  (____  /\\___  >__|  \n" +
-            "                       \\/     \\/     \\/     \\/           \\/     \\/      \n " +"\033[0m";
+            "                       \\/     \\/     \\/     \\/           \\/     \\/      \n " + "\033[0m";
     // JTesseract version
-    private  final String VERSION = "\033[34m 1.8-SNAPSHOT\033[0m";
+    private final String VERSION = "\033[34m 1.8-SNAPSHOT\033[0m";
 
     //my github uri
-    public  final String GITHUBURI = "https://github.com/JDode/JTesseract";
+    public final String GITHUBURI = "https://github.com/JDode/JTesseract";
 
 
     public static void main(String[] arg) {
         new JTesseract().init().start(arg);
-
     }
 
 
-    private  JTesseract init(){
+    private JTesseract init() {
         System.out.print(this.LOGOSTR);
         System.out.printf("\033[32m Version : %s\033[0m \n", this.VERSION);
         System.out.printf("\033[33m  GitHub  : \033[0m %s", this.GITHUBURI);
         return this;
     }
-    private void start(String[] arg){
-        String[] args = arg;
+
+    private void start(String[] arg) {
         //获取命令行传入的参数
-        if (args[1]==null || args[2]==null || !args[1].equals("--config")){
-            System.out.println("\n\033[31m  Message :  Configuration file gets abnormal （--config [file]） \033[0m");
-        }else {
-            System.out.printf("\n\033[32m  OCR-Result: %s\033[0m",111);
+        if(arg.length > 0 && arg[0].equals("--help")){
+            System.out.println("\n--config  「File Path」");
+            System.out.println("\n--version  this app version");
+            System.out.println("\n--about    this Jar author information");
+        }
+
+        try {
+            //这里处理--config的参数
+            if (arg.length == 0 || arg[0] == null || arg[1] == null || !arg[0].equals("--config")) {
+                System.out.println("\n\033[31m  Message :  Configuration file gets abnormal （--config [file]） \033[0m");
+            } else {
+                System.out.printf("\n\033[32m  OCR-Result: %s\033[0m", arg[arg.length-1]);
+            }
+        } catch (Exception e) {
+            System.err.println(" \n \033[31m Message :  Configuration file gets abnormal （--config [file]）\033[0m");
         }
     }
 }
