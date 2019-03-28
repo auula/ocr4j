@@ -30,5 +30,5 @@ target/generated-sources/
 target/generated-test-sources/
 
 # Others
-.idea
+/.idea
 *.iml
