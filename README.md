@@ -21,6 +21,52 @@
                     2019年03月28日20:28:26</p> 
 
 ----------
+### 🚀导入jar包并且使用
+
+> 各个开发工具导入jar包不一样所以这里我准备获取录制一个视频给大家演示,调用jar代码示例👇
+
+```java
+package com.github.JDode.JTesseract;
+
+import static org.junit.Assert.assertTrue;
+
+import com.github.JDode.JTesseract.model.Tesseract;
+import org.junit.Test;
+
+import java.io.File;
+
+/**
+ * Unit test for simple App.
+ */
+public class AppTest 
+{
+    /**
+     * Rigorous Test :-)
+     */
+    @Test
+    public void shouldAnswerWithTrue()
+    {
+        assertTrue( true );
+    }
+
+    @Test
+    public void  test01(){
+        //通过脚手架生成的配置文件，传入文件地址方便程序后续使用
+        String config  = "/Users/jdode/JTesseract/src/tesseract.properties";
+        //实例一个JTesseract对象传入相关参数
+        JTesseract init = new JTesseract().init(new Tesseract().build(config));
+        //传入被识别文字的图片
+        init.setFile(new File("/Users/jdode/Desktop/3.png"));
+        //调用OCR方法即可看到结果,下面有预览截图
+        System.out.println(init.OCR());
+    }
+
+}
+
+```
+
+
+----------
 
 
 ### 🤩程序预览👨‍❤️‍👨
