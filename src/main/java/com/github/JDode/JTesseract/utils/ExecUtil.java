@@ -49,7 +49,7 @@ public class ExecUtil {
     }
 
 
-    public String putText() throws IOException {
+    public String putText()  {
         StringBuilder sb = new StringBuilder();
         BufferedReader buffReader = null;
         try {
@@ -71,7 +71,11 @@ public class ExecUtil {
             //e.printStackTrace();
         } finally {
             if (buffReader != null) {
-                buffReader.close();
+                try {
+                    buffReader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         }
         return new String(sb);

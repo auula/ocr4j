@@ -18,7 +18,6 @@ public class Tesseract {
 
     private String language = "language";
 
-
     public Tesseract build(String url) {
         PropertiesUtil build = new PropertiesUtil().build(url);
         this.setWork_dir(build.getProperty(work_dir));
@@ -61,5 +60,7 @@ public class Tesseract {
     public void setLanguage(String language) {
         this.language = language;
     }
+
+
 
 }

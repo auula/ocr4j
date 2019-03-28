@@ -17,7 +17,7 @@ public class PropertiesUtil {
     public String url;
 
 
-    public PropertiesUtil build(String uri) {
+    public PropertiesUtil build(String url) {
         this.url = url;
         this.properties = this.properties == null ? new Properties() : this.properties;
         return this;

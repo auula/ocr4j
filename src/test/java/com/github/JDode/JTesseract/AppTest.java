@@ -5,6 +5,8 @@ import static org.junit.Assert.assertTrue;
 import com.github.JDode.JTesseract.model.Tesseract;
 import org.junit.Test;
 
+import java.io.File;
+
 /**
  * Unit test for simple App.
  */
@@ -21,6 +23,10 @@ public class AppTest
 
     @Test
     public void  test01(){
-        //Tesseract build = new JTesseract().build("");
+        String config  = "/Users/jdode/JTesseract/src/tesseract.properties";
+        JTesseract init = new JTesseract().init(new Tesseract().build(config));
+        init.setFile(new File("/Users/jdode/Desktop/3.png"));
+        System.out.println(init.OCR());
     }
+
 }
