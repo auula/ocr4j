@@ -26,7 +26,15 @@
 ### 🤩程序预览👨‍❤️‍👨
 
  1.展示
-![](https://ws3.sinaimg.cn/large/006tKfTcly1g1isbtifmjj31i60lan1q.jpg)
+ 
+ ![JTesseractJTesseract](https://ws2.sinaimg.cn/large/006tKfTcly1g1isgwutr1j31c00u0u0z.jpg)
+ 
+
+
+----------
+
+
+![JTesseract](https://ws3.sinaimg.cn/large/006tKfTcly1g1isbtifmjj31i60lan1q.jpg)
 
 ----------
 
