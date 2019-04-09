@@ -23,10 +23,10 @@ public class AppTest
 
     @Test
     public void  test01(){
-        String config  = "/Users/jdode/JTesseract/src/tesseract.properties";
-        JTesseract init = new JTesseract().init(new Tesseract().build(config));
-        init.setFile(new File("/Users/jdode/Desktop/3.png"));
-        System.out.println(init.OCR());
+//        String config  = "/Users/jdode/JTesseract/src/tesseract.properties";
+//        JTesseract init = new JTesseract().init(new Tesseract().build(config));
+//        init.setFile(new File("/Users/jdode/Desktop/3.png"));
+//        System.out.println(init.OCR());
     }
 
 }
