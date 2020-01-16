@@ -26,14 +26,6 @@
 > 各个开发工具导入jar包不一样所以这里我准备获取录制一个视频给大家演示,调用jar代码示例👇
 
 ```java
-package com.github.JDode.JTesseract;
-
-import static org.junit.Assert.assertTrue;
-
-import com.github.JDode.JTesseract.model.Tesseract;
-import org.junit.Test;
-
-import java.io.File;
 
 /**
  * Unit test for simple App.
