@@ -17,7 +17,7 @@
 </p>
 </br>
 </br>
-<p align="right">By: Ding Shuo
+<p align="right">
                     2019年03月30日11:15:23</p> 
 
 ----------
