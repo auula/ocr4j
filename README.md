@@ -5,8 +5,8 @@
 <p align="center">这是基于 <code>Tesseract 光学字符识别引擎</code>  使用Java语言开发的一个OCR自然文字工具包,支持几十种语言识别😋</p>
 
 <p align="center">
-    🤩 <a href="https://github.com/YooDing/JTesseract" target="_blank">仓库地址</a> | 
-    🍻<a href="https://github.com/YooDing/JTesseract" target="_blank">脚手架CLI下载 </a> | 
+    🤩 <a href="https://github.com/higker/JTesseract" target="_blank">仓库地址</a> | 
+    🍻<a href="https://github.com/higker/JTesseract" target="_blank">脚手架CLI下载 </a> | 
     👷 <a href="https://wpa.qq.com/msgrd?v=3&uin=2420498526&site=qq&menu=yes" target="_blank">联系作者</a> 
 </p>
 
