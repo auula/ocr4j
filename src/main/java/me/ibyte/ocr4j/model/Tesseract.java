@@ -21,15 +21,21 @@ public class Tesseract implements OpticalCharacterRecognition {
     // 识别类型支持 chi_sim...
     private String[] Language;
     // 存放结果的栈
-    private Stack<String> ResultStack;
+    private final Stack<String> ResultStack;
 
     public Tesseract(String tessData, String[] language) {
         TessData = tessData;
         Language = language;
-        ResultStack = new Stack<String>();;
+        ResultStack = new Stack<String>();
+    }
+
+    public OpticalCharacterRecognition NewOCR(){
+        return this;
     }
 
     public Tesseract() {
+        ResultStack = new Stack<String>();
+        ResultStack.push("1");
     }
 
     public String getTessData() {
@@ -49,26 +55,29 @@ public class Tesseract implements OpticalCharacterRecognition {
     }
 
 
-    @Override
     public boolean init() {
         return false;
     }
 
-    @Override
     public String scanText(File file) {
-        ResultStack.push("");
+        return null;
+    }
+
+    public String scanText(String filepath) {
         return null;
     }
 
     @Override
-    public String scanText(String path) {
-        ResultStack.push("");
-        return null;
-    }
-
-    @Override
-    public void otFile(Writer writer) {
+    public File toFile(String filePath) {
         String pop = ResultStack.pop();
+        System.out.println(pop);
+        return null;
+    }
+
+
+
+    public void writer(Writer writer) {
+
     }
 }
 

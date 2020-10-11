@@ -7,6 +7,7 @@ import org.junit.Test;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.net.HttpCookie;
 import java.util.Stack;
 
 /**
@@ -19,8 +20,14 @@ import java.util.Stack;
 public class TestOCR {
     @Test
     public void Test() throws IOException {
-        OpticalCharacterRecognition ocr = new Tesseract();
+        Tesseract tesseract = new Tesseract();
+        //tesseract.init();
+        OpticalCharacterRecognition ocr = tesseract.NewOCR();
         String text = ocr.scanText("");
-        ocr.otFile(new FileWriter(new File("")));
+        System.out.println(text);
+        // 此方法返回一个file方便你后续操作
+        File file = ocr.toFile("");
+        // 你也可以通过writer来实现其他类型的存储
+        ocr.writer(new FileWriter(new File("")));
     }
 }
