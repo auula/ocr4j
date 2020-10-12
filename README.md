@@ -5,7 +5,7 @@
 - 不需要额外安装`Tesseract`
 - 不需要`tesseract.dll`
 - 不需要网络
-- 多平台支持,多系统
+- 平台支持:`Mac`、`Linux`
 
 # 使用示例:
 ```java
