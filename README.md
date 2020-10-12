@@ -19,9 +19,10 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 /**
- * @ Author: YMDing <br/>
+ * @Author: SDing <br/>
  * <p>
- * 测试OCR
+ *  测试OCR 支持Mac Linux Windows
+ *  必须是64位操作系统。
  * </p>
  */
 
