@@ -47,3 +47,8 @@ public class TestOCR {
     }
 }
 ```
+# 使用其他开源项目
+- [tesseract](https://github.com/tesseract-ocr/)
+- [gosseract](https://github.com/otiai10/gosseract)
+- [hutool](https://github.com/looly/hutool/)
+
