@@ -7,6 +7,10 @@
     <groupId>me.ibyte.ocr4j</groupId>
     <artifactId>ocr4j</artifactId>
     <version>1.0-beta</version>
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -19,7 +23,20 @@
             <artifactId>hutool-all</artifactId>
             <version>5.4.4</version>
         </dependency>
-    </dependencies>
 
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.5.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
